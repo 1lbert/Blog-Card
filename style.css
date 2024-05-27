@@ -1,0 +1,119 @@
+
+/* Josh W Comeau's Custom CSS Reset */
+/* -------------------------------- */
+
+/* Box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,figure,pre,blockquote,fieldset,legend,textarea, input[type="button"], input[type="reset"], input[type="submit"], input[type="file"], input[type="search"], input[type="text"], input[type="password"], input[type="email"], input[type="number"], input[type="tel"], input[type="url"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="time"], input[type="range"], input[type="color"], input[type="checkbox"], input[type="radio"], select, button {
+  margin: 0;
+}
+
+/* Typographic tweaks */
+body {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/* Improve media defaults */ 
+img, video, audio, canvas, iframe, embed, object {
+  display: block;
+  max-width: 100%;
+}
+
+/* Remove built-in form typography styles */
+button, input, optgroup, select, textarea {
+  font: inherit;
+}
+
+/* Avoid text overflows */
+pre, code, textarea {
+  overflow-wrap: break-word;
+}
+
+/* Create a root stacking context */
+html {
+  position: relative;
+  z-index: 0;
+}
+/* -------------------------------- */
+/* Josh W Comeau's Custom CSS Reset */
+
+
+:root{ 
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+    --Font: "Figtree";
+    --outline:  2px solid red;
+}
+
+main { 
+    font-family: var(--Font);
+    background-color: var(--Yellow);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-container { 
+    /* outline: var(--outline); */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    width: min(375px,90%);
+    margin: 0 auto;
+    background-color: var(--White);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 2px solid var(--Black);
+}
+
+img { 
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.card-type { 
+    background-color: var(--Yellow);
+    width: fit-content;
+    padding: 0 0.75rem;
+    border-radius: 5px;
+    /* margin-bottom: 1rem; */
+}
+
+.card-published { 
+    /* font-weight: 500; */
+    padding: 1rem 0;
+}
+
+p { 
+    font-weight: 500;
+    padding: 1rem 0;
+    color: var(--Grey);
+}
+
+.hero-container { 
+    /* outline: var(--outline); */
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+}
+.hero-container img { 
+    text-align: center;
+    /* outline: var(--outline); */
+    height: 40px;
+    width: auto;
+    margin: auto 0;
+}
+.hero-container p  { 
+  /* outline: var(--outline); */
+  padding: 0;
+}
