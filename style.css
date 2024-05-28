@@ -65,14 +65,13 @@ main {
     /* outline: var(--outline); */
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* justify-content: center; */
     width: min(375px,90%);
     margin: 0 auto;
     background-color: var(--White);
     padding: 1.5rem;
     border-radius: 1rem;
     border: 2px solid var(--Black);
+    box-shadow: 8px 8px black;
 }
 
 img { 
@@ -85,15 +84,13 @@ img {
     width: fit-content;
     padding: 0 0.75rem;
     border-radius: 5px;
-    /* margin-bottom: 1rem; */
 }
 
 .card-published { 
-    /* font-weight: 500; */
     padding: 1rem 0;
 }
 
-p { 
+.text { 
     font-weight: 500;
     padding: 1rem 0;
     color: var(--Grey);
@@ -116,4 +113,14 @@ p {
 .hero-container p  { 
   /* outline: var(--outline); */
   padding: 0;
+}
+
+.title:hover{ 
+  color: var(--Yellow);
+  cursor: pointer;
+}
+
+
+.title:hover ~ .hero.card-container {
+  box-shadow: 16px 16px black;
 }
